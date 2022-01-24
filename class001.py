@@ -7,9 +7,14 @@ class Employee:
     def add_prefix(self):
         return 'ok'
 
+    @property
+    def displayFullName(self):
+        return self.first_name + " " + self.last_name
+
 
 """ USE CLASS """
 emp1 = Employee('Sandra', 'Kuratowski')
 
 print(emp1.first_name)
 print(emp1.add_prefix)
+print(emp1.displayFullName)
